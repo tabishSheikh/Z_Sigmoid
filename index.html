@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z SIGMOID</title>
+  <link href="media/favicon.png" rel="icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <video autoplay loop muted plays-inline class="back-video">
+    <source src="media/bg.mp4" type="video/mp4">
+  </video>
+  <div>
+    <div class="header" id="navbar">
+      <img href="#" src="media/logo-new.png" class="logo">
+      <nav class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">CONTACT</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">SERVICES</a>
+      </nav>
+    </div>
+  </div>
+  
+  <h1 class="main-heading">Empowering Decisions Through Data Excellence</h1>
+  <h2 class="sub-heading">Are you equipped to handle the data tsunami? We are. As the leading global decision science and data analytics firm, we've got the people, processes, and platforms to turn data into actionable insights.</h2>
+
+  <h2 class="strip-heading">Our Services</h2>
+  <div class="services-container">
+    <div class="service-tile">
+      <h3>Service 1</h3>
+      <p>Description of Service 1.</p>
+    </div>
+    <div class="service-tile">
+      <h3>Service 2</h3>
+      <p>Description of Service 2.</p>
+    </div>
+    <div class="service-tile">
+      <h3>Service 3</h3>
+      <p>Description of Service 3.</p>
+    </div>
+    <div class="service-tile">
+      <h3>Service 4</h3>
+      <p>Description of Service 4.</p>
+    </div>
+    <div class="service-tile">
+      <h3>Service 5</h3>
+      <p>Description of Service 5.</p>
+    </div>
+    <div class="service-tile">
+      <h3>Service 6</h3>
+      <p>Description of Service 6.</p>
+    </div>
+  </div>
+
+  <section class="why-us-container">
+    <div class="why-us-text">
+      <h2>Why Choose Us?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum efficitur felis, quis condimentum ex aliquam eget. Nulla facilisi. Morbi feugiat malesuada magna nec aliquam. Mauris laoreet euismod urna, in aliquet dui ultrices eget.</p>
+    </div>
+    <div class="why-us-image">
+      <img src="media/WhyUs.jpg" alt="Image Description">
+    </div>
+  </section>
+  
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Address</h3>
+        <p>1234 Street Name<br>City, State, 12345</p>
+      </div>
+      <div class="footer-column">
+        <h3>Newsletter</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").classList.add("solid-background");
+      } else {
+        document.getElementById("navbar").classList.remove("solid-background");
+      }
+    }
+  </script>
+</body>
+</html>
