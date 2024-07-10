@@ -24,6 +24,11 @@
         <a href="#">PORTFOLIO</a>
         <a href="#">SERVICES</a>
       </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </div>
   </div>
   
@@ -97,7 +102,7 @@
 
   <script>
     window.onscroll = function() {scrollFunction()};
-
+    
     function scrollFunction() {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("navbar").classList.add("solid-background");
@@ -105,6 +110,10 @@
         document.getElementById("navbar").classList.remove("solid-background");
       }
     }
+  
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      document.querySelector(".navbar").classList.toggle("navbar-active");
+    });
   </script>
 </body>
 </html>
